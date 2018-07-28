@@ -16,7 +16,7 @@ def send_email_to(username,input_id):
 	s = smtplib.SMTP('smtp.gmail.com', 587)
 	s.starttls()
 	s.login(userId, Password)
-	message = "Dear "+username+",Welcom to our app"
+	message = "Dear "+username+", Welcome to our app"
 	s.sendmail(userId,input_id , message)
 	s.quit()
 
